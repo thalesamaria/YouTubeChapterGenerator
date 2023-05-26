@@ -1,0 +1,320 @@
+0:00:00.000,0:00:06.520
+ Fala comunidade TEC, tudo bem? Eu sou o professor Diego Bruno, sou Education TEC Lead aqui na
+
+0:00:06.520,0:00:14.760
+ DIO e hoje vim aqui pra falar um pouco com vocês sobre uma linguagem muito utilizada
+
+0:00:14.760,0:00:22.000
+ em todo o mundo, mais precisamente falando, a segunda linguagem mais utilizada em todo
+
+0:00:22.000,0:00:28.760
+ o mundo, que é a linguagem Python. Quero apresentar pra vocês alguns aspectos muito
+
+0:00:28.760,0:00:37.000
+ importantes envolvendo essa linguagem, que são direcionados principalmente para os paradigmas
+
+0:00:37.000,0:00:45.400
+ dessa linguagem, as aplicações e também o porquê essa linguagem é tão famosa e
+
+0:00:45.400,0:00:49.400
+ tão utilizada atualmente na comunidade TEC.
+
+0:00:55.400,0:01:01.000
+ Então, se você deseja saber um pouco mais sobre a linguagem Python, como aprender essa
+
+0:01:01.000,0:01:08.880
+ linguagem, como desenvolver softwares com essa linguagem e também um pouco mais sobre
+
+0:01:08.880,0:01:16.360
+ o mercado de trabalho envolvendo Python, deixe seu like e fique comigo até o final do nosso
+
+0:01:16.360,0:01:17.360
+ vídeo.
+
+0:01:17.360,0:01:19.120
+ Mas o que é Python?
+
+0:01:19.120,0:01:25.560
+ Bom, Python é uma linguagem de programação. "Ah, professor, mas isso todo mundo aqui já
+
+0:01:25.560,0:01:34.040
+ sabe." Sim, Python é uma linguagem de programação multi-paradigma, ou seja, é uma linguagem
+
+0:01:34.040,0:01:41.720
+ que envolve vários paradigmas da ciência da computação, como por exemplo, o paradigma
+
+0:01:41.720,0:01:50.440
+ orientado a objetos, o paradigma funcional e também a linguagem Python é uma linguagem
+
+0:01:50.440,0:01:59.760
+ interpretada, onde trabalhamos também com um alto nível e uma linguagem em inglês.
+
+0:01:59.760,0:02:06.360
+ Então, se pudermos falar o básico sobre a linguagem Python, seria mais ou menos isso.
+
+0:02:06.360,0:02:12.880
+ "Bom, professor, mas eu nunca ouvia falar sobre linguagem orientada a objetos, ou até
+
+0:02:12.880,0:02:16.880
+ mesmo nem sei o que é um objeto dentro da programação."
+
+0:02:16.880,0:02:23.880
+ Pessoal, a linguagem orientada a objetos surgiu para facilitar a vida do programador, onde
+
+0:02:23.880,0:02:32.720
+ você consegue, dentro de um sistema total, dividir o seu código em módulos e esses
+
+0:02:32.720,0:02:41.280
+ módulos realizam partes bem definidas do que seu projeto final pode fazer. Então,
+
+0:02:41.280,0:02:48.880
+ cada parte do seu código é bem definida como uma classe e essa classe pode ser reutilizada
+
+0:02:48.880,0:02:56.920
+ no futuro. Então, por exemplo, você criou uma classe para fazer leituras de dados de
+
+0:02:56.920,0:03:04.360
+ um sensor, de uma câmera. Então, toda vez que você precisar desses dados, você vai
+
+0:03:04.360,0:03:10.600
+ acessar essa classe para obter esses valores. Você não precisa a todo momento, no seu
+
+0:03:10.600,0:03:17.520
+ código, criar outra chamada para esse sensor, porque você já criou uma classe que faz
+
+0:03:17.520,0:03:24.960
+ isso. Então, você consegue reaproveitar código em outro projeto que é semelhante,
+
+0:03:24.960,0:03:32.200
+ por exemplo. Então, você consegue evoluir melhor seu código e se torna também um código
+
+0:03:32.200,0:03:38.280
+ bem mais claro para que outra pessoa entenda. Ou até mesmo, quando você for olhar seu
+
+0:03:38.280,0:03:44.600
+ código no futuro, ele é bem mais simples para que você entenda, porque ele é bem
+
+0:03:44.600,0:03:52.600
+ estruturado e bem organizado. E também a linguagem Python é uma linguagem funcional.
+
+0:03:52.600,0:03:59.040
+ O que significa isso? Que, de acordo com as funções matemáticas, o nosso código se
+
+0:03:59.040,0:04:06.600
+ torna melhor estruturado em razão aos procedimentos matemáticos que eu preciso realizar. Como,
+
+0:04:06.600,0:04:15.280
+ por exemplo, um cálculo de Pitágoras, um cálculo onde eu preciso encontrar a menor
+
+0:04:15.280,0:04:25.880
+ distância possível. Então, eu realizo funções de forma bem abstrata graças a esse paradigma
+
+0:04:25.880,0:04:35.760
+ que também vem embutido na linguagem Python, que é baseado no paradigma funcional.
+
+0:04:35.760,0:04:42.360
+ E por que a linguagem Python ganhou tanto espaço no cenário da computação mundial?
+
+0:04:42.360,0:04:49.160
+ Igualmente, a linguagem Python assume o segundo lugar entre as linguagens mais programadas
+
+0:04:49.160,0:04:55.720
+ em todo o mundo. Em primeiro, temos a linguagem JavaScript. No meu ponto de vista, a linguagem
+
+0:04:55.720,0:05:04.360
+ Python é tão bem aceita pela facilidade na forma de programação, também pela facilidade
+
+0:05:04.360,0:05:11.600
+ entre os ambientes de desenvolvimento. Então, temos ambientes onde você consegue desenvolver
+
+0:05:11.600,0:05:20.400
+ o seu código em ambiente online, como por exemplo o Google Colab, o SageMaker da AWS.
+
+0:05:20.400,0:05:28.880
+ Então você desenvolve o seu código sem precisar executar ele em uma máquina real.
+
+0:05:28.880,0:05:34.480
+ Você consegue executar em uma máquina em nuvem, utilizando processamento gratuito,
+
+0:05:34.480,0:05:40.200
+ sem precisar investir em um supercomputador, que é o caso do Google Colab, que libera
+
+0:05:40.200,0:05:47.440
+ processamento gratuito para o seu projeto. Mas também tem um outro lado, que por essa
+
+0:05:47.440,0:05:56.040
+ linguagem ir ganhando o mercado aos poucos, ela também atingiu várias áreas, principalmente
+
+0:05:56.040,0:06:02.320
+ as principais áreas da computação atualmente, que envolvem a área de inteligência artificial,
+
+0:06:02.320,0:06:10.000
+ Machine Learning, Data Science. E com isso, várias bibliotecas começaram a surgir, vários
+
+0:06:10.000,0:06:18.000
+ frameworks de desenvolvimento, e isso facilita muito a vida do desenvolvedor, a vida do programador.
+
+0:06:18.000,0:06:26.640
+ Por quê? Porque você consegue utilizar uma biblioteca, que é o padrão do uso das bibliotecas,
+
+0:06:26.640,0:06:31.440
+ você utilizar uma biblioteca que facilita o seu projeto, e você não precisa programar
+
+0:06:31.440,0:06:37.320
+ aquilo do zero. Existe uma biblioteca pronta. E por que existem tantas bibliotecas? Por
+
+0:06:37.320,0:06:45.200
+ essa linguagem, a linguagem Python, se tornar uma linguagem que se destaca bastante no cenário
+
+0:06:45.200,0:06:53.200
+ atual. Então, você precisa de uma biblioteca para representar valores, gerar gráficos,
+
+0:06:53.200,0:07:02.960
+ interpretar matrizes, realizar processamento com rede de Deep Learning, Machine Learning,
+
+0:07:02.960,0:07:07.400
+ processamento de visão computacional. Tem lá várias bibliotecas, como por exemplo,
+
+0:07:07.400,0:07:15.360
+ o OpenCV, Scikit-Learning, Pandas. E aí, indo para o lado dos frameworks, temos o TensorFlow,
+
+0:07:15.360,0:07:26.560
+ o Keras, o PyTorch. Então, se torna um projeto robusto, envolvendo esses vários ambientes
+
+0:07:26.560,0:07:32.480
+ e essas várias bibliotecas. Então, no meu ponto de vista, a linguagem Python se tornou
+
+0:07:32.480,0:07:41.600
+ tão potente atualmente, graças a esse respaldo todo que temos de grandes empresas na computação,
+
+0:07:41.600,0:07:47.960
+ disponibilizando suporte para uma linguagem de altíssimo potencial. E falando também
+
+0:07:47.960,0:07:54.200
+ um pouco das áreas que envolvem a linguagem Python, temos atualmente grandes aplicações
+
+0:07:54.200,0:08:02.040
+ envolvendo a linguagem Python, principalmente no cenário de Machine Learning, Data Science
+
+0:08:02.040,0:08:08.640
+ e também envolvendo aplicações web, onde a linguagem Python se destaca bastante. Mas
+
+0:08:08.640,0:08:15.480
+ principalmente, como eu disse anteriormente, a linguagem Python tem um respaldo muito grande
+
+0:08:15.480,0:08:23.240
+ envolvendo bibliotecas nativas, sendo também de fácil instalação, de fácil utilização.
+
+0:08:23.240,0:08:30.880
+ As dependências são de fácil acesso. E você, quando utiliza um sistema operacional
+
+0:08:30.880,0:08:38.600
+ como o Linux, usando uma máquina como o Ubuntu, por exemplo, você faz a instalação facilmente
+
+0:08:38.600,0:08:45.240
+ do pacote Python, que já vem incluso com as suas bibliotecas nativas. E você também
+
+0:08:45.240,0:08:52.780
+ consegue executar seu código, que foi escrito num bloco de notas e executa no terminal de
+
+0:08:52.780,0:08:59.680
+ forma tranquila. Mas tem também as pessoas que gostam de um ambiente mais elaborado para
+
+0:08:59.680,0:09:05.480
+ desenvolver o código. Então, temos o Sublime, que também é uma ferramenta bem interessante.
+
+0:09:05.480,0:09:13.720
+ Temos também o PyCharm e outras ferramentas voltadas para a programação em Python.
+
+0:09:13.720,0:09:19.680
+ Eu particularmente gosto muito do ambiente Colab, onde você desenvolve seu código dentro
+
+0:09:19.680,0:09:28.960
+ do navegador e você consegue executar seu código em uma máquina do Google. E você
+
+0:09:28.960,0:09:34.360
+ não precisa ter ali um computador super potente. Você consegue desenvolver seu código em
+
+0:09:34.360,0:09:41.180
+ um tablet, em um celular. Você não precisa ter um supercomputador. E você consegue utilizar
+
+0:09:41.180,0:09:51.520
+ processador, memória e GPU lá do Google ou da AWS, o que te torna um programador que
+
+0:09:51.520,0:09:59.280
+ não é dependente de um hardware super dedicado, como era feito lá no passado. Então, esse
+
+0:09:59.280,0:10:04.200
+ é um ponto bastante importante para quando falamos de programação em Python.
+
+0:10:04.200,0:10:11.800
+ Bom, e as aplicações são diversas. Vai desde a análise de um cliente em Big Data
+
+0:10:11.800,0:10:17.760
+ para um banco, onde eu preciso analisar várias variáveis de vários clientes, onde eu preciso
+
+0:10:17.760,0:10:25.360
+ analisar o score do meu cliente para propor para ele um cartão de crédito e tudo mais.
+
+0:10:25.360,0:10:31.760
+ E vai até aplicações envolvendo carros autônomos, que é a minha área de pesquisa.
+
+0:10:31.760,0:10:39.480
+ Então, atualmente, os institutos de pesquisa focados em desenvolvimento de carros autônomos
+
+0:10:39.480,0:10:47.800
+ utilizam linguagem Python, seja para o sistema de navegação, seja para o sistema de visão,
+
+0:10:47.800,0:10:53.680
+ seja até para o sistema de planejamento de rotas. Utilizamos a linguagem Python como
+
+0:10:53.680,0:11:00.280
+ a linguagem principal para desenvolvimento de tecnologias envolvendo carros autônomos.
+
+0:11:00.280,0:11:06.680
+ Só um exemplo, quando eu entrei no doutorado, eu utilizava muito linguagem C. Eu não sabia
+
+0:11:06.680,0:11:13.800
+ programar em Python, nunca tinha programado. Mas, com a facilidade de ter várias bibliotecas,
+
+0:11:13.800,0:11:19.680
+ várias funções, vários frameworks disponíveis em Python, eu fui deixando a linguagem C
+
+0:11:19.680,0:11:27.640
+ de lado e me tornei um programador em Python, porque isso facilitou muito a minha vida como
+
+0:11:27.640,0:11:36.640
+ projetista nessa área. E também, várias pessoas acabam chegando para a linguagem Python
+
+0:11:36.640,0:11:44.840
+ por conta dos projetos integrados com outras empresas, onde a necessidade de utilizar ambientes
+
+0:11:44.840,0:11:52.360
+ colaborativos, a necessidade de utilizar frameworks como o TensorFlow, como o PyTorch, como o
+
+0:11:52.360,0:12:01.000
+ Vimu, exigem a linguagem Python como a linguagem principal para se trabalhar com essas ferramentas.
+
+0:12:01.000,0:12:07.120
+ Bom pessoal, agora é a hora de colocar a mão na massa. Utilizem essas dicas que eu
+
+0:12:07.120,0:12:14.280
+ passei para vocês, instalem esses ambientes, utilizem o Google Colab, mas temos também
+
+0:12:14.280,0:12:21.160
+ que aprender essa linguagem de uma forma completa e com aplicações. Então, não deixe de
+
+0:12:21.160,0:12:30.200
+ se inscrever no DioPro, onde você tem o conteúdo de Python, você tem o conteúdo de Data Science,
+
+0:12:30.200,0:12:36.040
+ você tem o conteúdo de Machine Learning e todos esses conteúdos são focados na linguagem
+
+0:12:36.040,0:12:43.640
+ Python. Então, se o seu objetivo é aprender Python, é aqui com a Dio, com o conteúdo
+
+0:12:43.640,0:12:52.000
+ Proto. Assine esse conteúdo e você vai ter diversos recursos envolvendo a linguagem Python.
+
+0:12:52.000,0:12:58.120
+ Certo pessoal? Estamos juntos, vamos em frente, um abraço e até mais pessoal!

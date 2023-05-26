@@ -1,1203 +1,183 @@
-0:00:03.900,0:00:08.460
-good morning everybody David Shapiro 
-here we are back for part two of the
-
-0:00:08.460,0:00:15.780
-um Knowledge Graph Supreme Court decision thing 
-so we're using chat GPT and gpt3 to help us along
-
-0:00:16.680,0:00:25.980
-and as a quick recap where we left off was um 
-I didn't get that far um but I downloaded about
-
-0:00:25.980,0:00:31.620
-22 Supreme Court opinions this was about 
-Anti-Trust law so a very specific domain
-
-0:00:32.700,0:00:40.260
-um and then I got them converted to text so that 
-is um I did that with another uh repo it's fine
-
-0:00:40.260,0:00:47.100
-but then what we did was the the big thing that we 
-achieved was that we figured out that we can get
-
-0:00:47.100,0:00:54.960
-gpt3 to just go ahead and write my um write the 
-uh Whatchamacallit for us the the knowledge graph
-
-0:00:54.960,0:01:03.600
-Json and so what I'm doing is the nodes that I 
-asked for was each node should be a case citation
-
-0:01:03.600,0:01:08.520
-precedent or prior opinion each node should 
-have several properties such as date case number
-
-0:01:08.520,0:01:14.700
-involved parties reasoning for including in this 
-opinion and other relevant information so that
-
-0:01:15.360,0:01:19.260
-um worked really well because you see like it's 
-got a case number it tells me when it happened
-
-0:01:19.260,0:01:26.760
-and then the reasoning so like involve parties 
-like great this is Phenom this is phenomenal
-
-0:01:26.760,0:01:32.400
-information so what we're doing is we're going 
-to create a cross-linked web as to like why
-
-0:01:32.400,0:01:40.080
-all these things are interlinked so that way 
-theoretically if a uh the the this hypothetical
+0:00:00.000,0:00:04.000
+ [Música de abertura]
 
-0:01:40.080,0:01:46.560
-use case if an attorney is researching antitrust 
-laws so that one they can you know go to a court
+0:00:04.000,0:00:10.000
+ É oportunidade de emprego nessa área de Web3, né?
 
-0:01:46.560,0:01:51.600
-court of appeals or even present to the Supreme 
-Court they will have a masterful understanding
+0:00:10.000,0:00:13.200
+ Como que tá hoje o mercado e pra onde que o mercado tá
 
-0:01:51.600,0:01:59.100
-of established law and the reason that this is 
-important is because common law is um how law
+0:00:13.200,0:00:14.000
+ tendenciando?
 
-0:01:59.100,0:02:05.040
-Works in America it's by prior precedent is the 
-so you've got the the laws that are laid down by
+0:00:14.000,0:00:18.000
+ Porque hoje realmente é bem escasso, mas como que...
 
-0:02:05.040,0:02:10.920
-the legislative branch and then interpreted by the 
-judicial branch and so the judicial branch keeps
+0:00:18.000,0:00:21.000
+ No Brasil, pelo menos, mas como que você vê isso?
 
-0:02:10.920,0:02:15.660
-track of their own interpretation right because 
-there's the legislative branches it it has to do
+0:00:21.000,0:00:23.000
+ Puta, meu...
 
-0:02:15.660,0:02:21.900
-with separation of powers anyways so that's how 
-we got Where We Are um it worked really well and
+0:00:23.000,0:00:28.000
+ Eu não consigo nem falar, sabe, tanto sobre...
 
-0:02:21.900,0:02:26.760
-um there's all kinds of what-ifs and gotchas that 
-I'm not going to worry about because this worked
+0:00:28.000,0:00:31.000
+ Meu, como que eu posso falar de forma tão objetiva?
 
-0:02:26.760,0:02:32.820
-really well and we can iterate over the over the 
-long term so but this I had to plug in manually
+0:00:31.000,0:00:33.000
+ Precisa de tudo, né? De tudo.
 
-0:02:33.480,0:02:38.940
-and it's about four pages so like if we do 
-if we search for how many new pages there are
+0:00:33.000,0:00:35.000
+ Vou dar um exemplo aqui.
 
-0:02:39.780,0:02:44.580
-one two three yeah one two three 
-so that this has four pages total
+0:00:35.000,0:00:38.000
+ Meu, gerente de projetos Web3.
 
-0:02:45.840,0:02:51.840
-um which the that that was good so the 
-next problem is we got to take these and
+0:00:38.000,0:00:40.000
+ Tem algum aqui?
 
-0:02:51.840,0:02:57.300
-regardless of how long they are we have to 
-break them down into chunks of four pages
+0:00:40.000,0:00:44.000
+ Social media que entenda de Web3.
 
-0:02:57.300,0:03:04.860
-maximum so rather than do this manually I was 
-like why don't I just ask chat GPT so here we go
+0:00:44.000,0:00:50.000
+ Meu, todas as profissões, sem brincadeira,
 
-0:03:06.480,0:03:21.300
-um I have a folder named um uh let's see 
-um opinions uh text um this folder contains
+0:00:50.000,0:00:55.000
+ programador, consultor, relacionamento,
 
-0:03:22.380,0:03:38.880
-um uh text files of scotus decisions um that 
-were converted from PDFs the pages are demarcated
+0:00:55.000,0:00:58.000
+ gerente de comunidade, community manager.
 
-0:03:39.480,0:03:50.160
-by um by the words new page I need a python 
-function so I'm basically talking to this
+0:00:58.000,0:01:01.000
+ Nossa, meu, precisa muito desses caras, sabe?
 
-0:03:50.160,0:03:56.880
-thing like I'd be talking to a developer 
-I need the python function where I pass um
+0:01:01.000,0:01:06.000
+ Geralmente, quando a gente vai começar um projeto de Web3,
 
-0:03:58.980,0:04:05.100
-pass uh actually no I actually let's 
-just ask it to do the whole thing I
+0:01:06.000,0:01:09.000
+ a gente olha e fala, "Meu, quem são os caras que a gente
 
-0:04:05.100,0:04:17.160
-need a python function that um reads every 
-uh uh file in opinions underscore text um
+0:01:09.000,0:01:11.000
+pra trabalhar aqui?" E sempre estão os mesmos,
+vai pegar
 
-0:04:19.980,0:04:29.640
-and then breaks each file 
-into chunks of four pages um
+0:01:11.000,0:01:15.370
+ porque é difícil achar novas pessoas que já estão no
 
-0:04:30.840,0:04:45.120
-the purpose of this is to um limit the size of 
-each subsequent file please then save the chunks
+0:01:15.370,0:01:17.000
+ mercado trabalhando, né?
 
-0:04:46.500,0:05:02.340
-into um into a folder named chunks text 
-um and append um a serial number to
+0:01:17.000,0:01:20.000
+ Por exemplo, se você pega um...
 
-0:05:02.880,0:05:15.720
-the original file name for instance um you know 
-star underscore one star underscore two and so on
+0:01:20.000,0:01:23.560
+ Precisa de alguém aqui rápido pra poder ser um gerente de
 
-0:05:17.700,0:05:18.720
-all right let's see what it does
+0:01:23.560,0:01:24.000
+ projetos
 
-0:05:23.880,0:05:27.480
-why would this violate the content policy
+0:01:24.000,0:01:26.000
+ pra Web3.
 
-0:05:31.980,0:05:38.700
-okay I sent in feedback um let's see 
-what we've got so import OS split text
+0:01:26.000,0:01:28.000
+ Cara, você não consegue pegar um gerente de projetos
 
-0:05:38.700,0:05:43.140
-files input folder output folder pages 
-per chunk so good it's parameterized it
+0:01:28.000,0:01:30.000
+ tradicional já
 
-0:05:44.340,0:05:52.380
-um if not uh output folder make it nice 
-okay for file and Os Lister input folder
+0:01:30.000,0:01:33.000
+ e colocar ali pra poder começar a trabalhar com Web3
 
-0:05:53.640,0:06:01.680
-um with open OS path join input folder file r 
-as F read it excellent Pages equals split on
+0:01:33.000,0:01:35.000
+ sem antes dar um banho de loja
 
-0:06:01.680,0:06:08.640
-new page perfect so it understood that for I and 
-chunk enumerate page range zero pages per chunk
+0:01:35.000,0:01:38.000
+ explicando como que funciona um token, o que é o NFT,
 
-0:06:08.640,0:06:14.880
-excellent so this is this is a list comprehension 
-that will break it into equal chunks or chunks
+0:01:38.000,0:01:41.450
+ o que vai ser uma comunidade, vai ser uma DAO, vai ter isso
 
-0:06:14.880,0:06:21.840
-of four output file equals this underscore 
-plus oh dang that's good that's good okay
+0:01:41.450,0:01:42.000
+, vai ter aquilo,
 
-0:06:23.640,0:06:27.060
-um this is wonderful so let's go to this
+0:01:42.000,0:01:44.000
+ o código tal. Então, assim,
 
-0:06:28.140,0:06:31.080
-um I had started writing it and then I 
-was like I don't have the energy for this
+0:01:44.000,0:01:48.000
+ pra todas as áreas que a gente pensa aqui de tecnologia,
 
-0:06:32.100,0:06:39.360
-I'm telling you I have said it on Twitter and 
-I've said it on mostly Twitter but LinkedIn
+0:01:48.000,0:01:52.000
+ tá demandando pessoas, faltando pessoas
 
-0:06:39.360,0:06:44.880
-and a few other places English your ability 
-to describe what you want is going to be the
+0:01:52.000,0:01:54.000
+ quando a gente fala de Web3.
 
-0:06:44.880,0:06:52.140
-primary programming language from now on period 
-end of story if you can think through a function
+0:01:54.000,0:01:56.000
+ Top demais.
 
-0:06:53.340,0:07:02.100
-then um yeah this is this is it so let's run 
-this let's see if this worked um need a command
+0:01:56.000,0:01:58.000
+ Legal, então...
 
-0:07:02.100,0:07:09.660
-prompt CD and we're in the scotus opinions um 
-and then we'll do python step 01 split chunks
+0:01:58.000,0:02:02.000
+ Programador nem pra falar, né, Renan?
 
-0:07:11.700,0:07:17.460
-why you no work um this actually happens 
-quite a bit let's see if it can fix it
+0:02:02.000,0:02:08.000
+ Programador já falta já pra qualquer tecnologia,
 
-0:07:20.640,0:07:29.460
-um so thanks that mostly 
-worked but through this error
+0:02:08.000,0:02:11.000
+ pra essa daqui, então, é muita branca, quase.
 
-0:07:32.760,0:07:39.060
-and you fixed that error please now if this 
-can debug this I know exactly what it is
+0:02:11.000,0:02:13.000
+ O que é legal também, assim, você pode ir no LinkedIn,
 
-0:07:40.800,0:07:44.040
-yep yep there you go
+0:02:13.000,0:02:16.620
+ procurar por vagas, coloca o Web3 e vai vir ali umas 200,
 
-0:07:53.700,0:07:57.600
-you need to specify the encoding yep perfect
+0:02:16.620,0:02:17.000
+ 300.
 
-0:08:02.280,0:08:05.460
-oh wow okay it's saying add the ignore flag
+0:02:17.000,0:02:21.000
+ Mas você pode ir decupando isso, pode falar assim,
 
-0:08:08.280,0:08:12.900
-wonderful wonderful adding 
-encoding utf-8 should be sufficient
+0:02:21.000,0:02:25.400
+ "ah, profissional de blockchain, profissional de NFT, prof
 
-0:08:15.060,0:08:16.680
-um so that goes to do
+0:02:25.400,0:02:27.000
+issional de DAO",
 
-0:08:18.720,0:08:19.560
-right here
+0:02:27.000,0:02:30.000
+ porque tudo isso, no fundo, é um conceito, né,
 
-0:08:25.920,0:08:28.200
-hmm fascinating
+0:02:30.000,0:02:35.110
+ então, assim, você não vai ter um cargo em cima de um
 
-0:08:31.860,0:08:33.240
-did it get farther
+0:02:35.110,0:02:36.000
+ conceito,
 
-0:08:35.640,0:08:40.980
-this is weird though input folder 
-file contents read encoding utf-8
+0:02:36.000,0:02:40.210
+ você tem cargos em cima de tecnologia ou alguma coisa volt
 
-0:08:40.980,0:08:48.060
-as infile so sometimes this happens um 
-let's see what is the encoding here so
+0:02:40.210,0:02:41.000
+ada pro negócio.
 
-0:08:48.060,0:08:55.020
-sometimes what I do is I'll convert it 
-to something and then I'll convert back
+0:02:41.000,0:02:44.770
+ Então, a gente pode ir trazendo e procurando vagas desse
 
-0:08:57.660,0:08:58.260
-so let's
+0:02:44.770,0:02:46.000
+ sentido, né,
 
-0:09:02.400,0:09:04.200
-yeah hmm
+0:02:46.000,0:02:49.700
+ então, eu olhei aqui, tem várias empresas que são foc
 
-0:09:07.080,0:09:12.000
-I wonder what happens if we do let's 
-add let's add that ignore thing rather
+0:02:49.700,0:02:51.000
+adas no Web3,
 
-0:09:12.000,0:09:15.480
-than rather than getting lost in the 
-weeds let's just do errors equal ignore
+0:02:51.000,0:02:53.000
+ mas aí eles têm N oportunidades ali.
 
-0:09:18.660,0:09:21.420
-because you know what I looked at 
-the text file it looks fine to me
+0:02:53.000,0:02:55.000
+ Então, pode ser um começo também.
 
-0:09:23.640,0:09:30.780
-oh and let's also see if it um okay it got 
-pretty far already so it got pretty far in
-
-0:09:30.780,0:09:37.200
-the process before blowing up one two three 
-so now we've got all the chunks cool cool cool
-
-0:09:39.180,0:09:43.980
-um all right heck with it send it what do you mean
-
-0:09:47.580,0:09:48.900
-this was in
-
-0:09:51.180,0:09:57.240
-so this was in Split text files F right 
-oh it couldn't write it interesting
-
-0:09:59.640,0:10:07.380
-oh okay okay okay um so when we write it we 
-need to we need to convert it to ASCII and back
-
-0:10:08.400,0:10:11.280
-um so let's see if it understands this
-
-0:10:13.740,0:10:17.100
-oh man I'll be I'll be jazzed if 
-it if it understands this okay
-
-0:10:17.100,0:10:25.140
-um great that worked uh now I have 
-a new problem here's the error
-
-0:10:27.300,0:10:31.740
-um please find a solution for this new bug
-
-0:10:34.440,0:10:37.440
-so what so the problem here is and I
-
-0:10:38.400,0:10:44.760
-um yeah that you're trying to join a list of 
-strings that contain spaces I don't think so
-
-0:10:53.700,0:10:55.740
-new page nope that's not it
-
-0:11:04.140,0:11:16.260
-replace no no I don't think that's it I 
-think we need to fix the um string encoding
-
-0:11:17.280,0:11:20.040
-um here's the last part of the error
-
-0:11:26.040,0:11:29.400
-I feel like I'm talking to like Hal 9000.
-
-0:11:32.520,0:11:34.500
-yep there it is that's it
-
-0:11:39.660,0:11:40.260
-yep
-
-0:11:43.020,0:11:47.760
-ah so we need to add the encoding to 
-to utf-8 right okay that makes sense
-
-0:11:49.080,0:11:50.700
-this thing is smarter than me
-
-0:11:54.000,0:11:57.720
-um okay so when we write it yeah 
-oh that's the problem I okay
-
-0:11:59.400,0:12:05.760
-um encoding equals UTF eight okay cool 
-but uh this took way less brain power
-
-0:12:06.780,0:12:12.480
-okay let's see if that works DLS clear 
-screen that was fast all right so now
-
-0:12:12.480,0:12:26.980
-we have 144 chunks of text let's see what the 
-biggest one is 20 uh [Laughter] uh [Laughter]
-
-0:12:31.740,0:12:35.040
-I think the uh I think the 
-OCR messed up with this one
-
-0:12:38.160,0:12:45.360
-why do you believe that the Sherman Act 
-okay I'm probably disturbing my audience
-
-0:12:47.100,0:12:50.700
-what's funny is that it got the capital 
-letters fine but then the rest it's like
-
-0:12:50.700,0:12:57.360
-no I wonder if it was like if the scanner bed 
-was like moving too slowly or something foreign
-
-0:13:01.380,0:13:06.480
-I'm sorry okay I'm gonna pause this 
-because I'm gonna keep laughing
-
-0:13:11.400,0:13:15.300
-okay I had to stop and make myself tea 
-I'm still probably gonna be looking a
-
-0:13:15.300,0:13:24.240
-bit I'm sorry okay now normally oh sorry oh 
-I don't know why this is so funny normally
-
-0:13:25.440,0:13:30.720
-um this would uh what I would do is just 
-delete data but in this case I don't want to
-
-0:13:30.720,0:13:36.420
-lose anything and imagine like what if half of 
-our files were like this so let's come up with
-
-0:13:36.420,0:13:43.740
-a solution so I'm going to with so this this this 
-this function works so I'm going to say okay cool
-
-0:13:44.340,0:13:54.480
-let's make a new script so let's go back over to 
-Chad GPT great that all worked um but it turns
-
-0:13:54.480,0:14:06.600
-out the OCR barfed on a few files so the um so 
-there are lots of duplicated characters such as
-
-0:14:09.360,0:14:22.320
-um please write a new script using Spacey or 
-nltk to um de-duplicate uh extra characters
-
-0:14:23.880,0:14:34.380
-um search through all the files in um see 
-what was the folder name chunks.text in
-
-0:14:35.880,0:14:48.360
-chunks underscore text um deduplicate deduplicate 
-characters um and then save the cleaned up copy
-
-0:14:49.860,0:14:55.080
-um in a new folder called um dedupt text
-
-0:15:05.640,0:15:06.420
-all right
-
-0:15:40.560,0:15:41.400
-will that work
-
-0:15:46.440,0:15:50.160
-I don't know if that'll work is Spacey that good
-
-0:15:54.060,0:15:55.320
-or T and Doc
-
-0:15:59.160,0:16:04.260
-um okay I think I'll need to add the 
-encoding but let's give it a shot
-
-0:16:06.720,0:16:10.500
-and let me make sure I've 
-got Pippin pip install Spacey
-
-0:16:12.480,0:16:19.920
-okay so while that's running I will do 
-save and we'll come back here and we'll do
-
-0:16:22.500,0:16:31.080
-um Step oh two oh so you might notice I started 
-I I um I do my functions like in order so that
-
-0:16:31.080,0:16:35.340
-way like if you're looking at this repo you don't 
-have to like try and reverse engineer what order
-
-0:16:35.340,0:16:43.200
-to run things in like it's just intrinsic 
-documentation um dedupe characters dot pi
-
-0:16:45.600,0:16:59.220
-okay python step O2 and I know that it's going to 
-barf on this so let's do any coding E equals UTF
-
-0:17:00.180,0:17:05.700
-utf-9 utf-9 is clearly better than 
-utf-8 right it's the next mission
-
-0:17:07.440,0:17:13.140
-sorry I'm in a mood today apparently 
-you having a giggle Mite okay um
-
-0:17:15.420,0:17:16.380
-let's see if it works
-
-0:17:20.400,0:17:24.540
-I'm not going to use the GPU for 
-something this simple it's a small
-
-0:17:25.260,0:17:31.080
-skipping registered can't find and it 
-doesn't seem to be a python package huh
-
-0:17:37.500,0:17:43.620
-let's see um it gave me this error
-
-0:17:46.740,0:17:48.000
-what does it mean
-
-0:17:50.400,0:17:51.660
-it didn't work
-
-0:17:58.140,0:18:00.600
-and this is the value of 
-having good error messages kids
-
-0:18:17.400,0:18:19.800
-interesting all right
-
-0:18:31.140,0:18:35.220
-let's see if that worked still didn't work
-
-0:18:40.080,0:18:48.780
-um okay all right so in this case it seems like we 
-found a limitation still didn't work Spacey load
-
-0:18:54.960,0:18:56.940
-says requirement already satisfied
-
-0:18:59.040,0:19:02.220
-yeah it says it's already satisfied um
-
-0:19:04.320,0:19:09.180
-let's go let's go to Google 
-let's see if uh let's see if this
-
-0:19:18.540,0:19:19.380
-all right
-
-0:19:26.280,0:19:26.880
-import
-
-0:19:35.040,0:19:37.500
-so it looks like you need 
-to do you need to install
-
-0:19:49.740,0:19:50.640
-let's try this
-
-0:19:56.700,0:19:58.080
-that looks like it did a thing
-
-0:20:05.880,0:20:09.840
-sorry I wasn't talking through it so 
-basically I was looking I found I found
-
-0:20:09.840,0:20:16.800
-a Spacey issue on GitHub and um let's see it 
-hasn't bombed yet so I wonder if it's working
-
-0:20:18.780,0:20:26.220
-um dedupt cool there's nothing 
-that's 20 uh no it didn't work
-
-0:20:28.620,0:20:29.940
-still didn't work okay
-
-0:20:33.060,0:20:33.560
-um
-
-0:20:39.240,0:20:43.920
-yeah so seems like Spacey is not 
-sufficient or at least this isn't
-
-0:20:45.060,0:20:56.160
-um okay so let's go back here go back to this um 
-okay I got Spacey to load but the original script
-
-0:20:56.700,0:21:07.860
-does not work the words um in some files are 
-still wrong um with lots of duplicated characters
-
-0:21:10.080,0:21:11.100
-um so for instance
-
-0:21:16.680,0:21:17.580
-for example
-
-0:21:23.460,0:21:25.320
-I probably should ask another way
-
-0:21:27.360,0:21:27.860
-yep
-
-0:21:30.540,0:21:33.120
-yep okay so it's actually going to tell me
-
-0:21:33.720,0:21:39.360
-yeah use regex so that's regex is actually the 
-way I would have done it originally so it looks
-
-0:21:39.360,0:21:44.100
-like this might be the right way to do it it 
-so all right let's see what it says foreign
-
-0:21:47.760,0:21:50.580
-do the same thing okay
-
-0:21:58.320,0:21:59.220
-interesting
-
-0:22:01.740,0:22:13.980
-okay um let's give this a try I will give 
-that a try but what about uh words where
-
-0:22:14.760,0:22:25.740
-um there are supposed to be duplicated 
-characters like book or look
-
-0:22:27.960,0:22:35.220
-um does yours script handle that and we use nltk
-
-0:22:36.360,0:22:43.380
-or Spacey or something else 
-to account for correct words
-
-0:22:51.480,0:22:55.800
-also while this is running I'm going to address 
-the elephant in the room and that was it like a
-
-0:22:55.800,0:23:02.460
-week ago I made a video saying like meh chat GPT 
-isn't that great um and uh so obviously like I
-
-0:23:02.460,0:23:09.480
-kind of have my foot in my mouth because this 
-is amazing it also looks like it failed um so
-
-0:23:10.800,0:23:16.080
-all right let me do a time check we are at 
-23 minutes so we're almost done for the day
-
-0:23:16.920,0:23:18.540
-um oh there we go okay
-
-0:23:30.660,0:23:39.360
-all right uh it's yeah yeah it'll it's gonna 
-give me that thing so I think what we'll do is
-
-0:23:40.380,0:23:46.440
-we'll just check to see if this happens 
-because it's better to have some data than none
-
-0:23:46.980,0:23:53.460
-so uh I think what we'll do all right split 
-chunks that one worked dedupe characters so
-
-0:23:53.460,0:24:02.640
-what we need to do is find the ones where this 
-happened right so um generally it looks like
-
-0:24:08.160,0:24:09.120
-okay
-
-0:24:13.980,0:24:18.060
-looks like it only happened 
-in one document yeah okay so
-
-0:24:19.860,0:24:29.760
-in this case we'll say we'll pass in any file 
-that um starts with this so we'll we'll uh we'll
-
-0:24:29.760,0:24:35.940
-we'll eat the eat the cost and what I mean by 
-that is we'll just Excel accept that some data
-
-0:24:35.940,0:24:40.380
-is not going to be quite as good but that's 
-plausible because like it's an OCR mistake
-
-0:24:40.380,0:24:51.900
-but the thing is is we just need it to be small 
-enough to fit in um so de-duplicate characters uh
-
-0:25:01.740,0:25:03.600
-yeah I don't I don't think this is gonna work
-
-0:25:06.240,0:25:14.760
-so it it's close but it's not quite um 
-thanks um can you modify the uh the uh
-
-0:25:15.900,0:25:27.480
-the script that uses regex instead um the 
-only problem is in files with and the name
-
-0:25:29.520,0:25:35.400
-can you just sort um or filter 
-filter out any other files
-
-0:25:39.060,0:25:44.580
-okay so let's see what it comes up with there 
-meanwhile it looks like this is the largest
-
-0:25:44.580,0:25:52.500
-one that is um not good right so it's 13 000 
-characters long so let's see how many tokens
-
-0:25:52.500,0:26:01.140
-this is so as long as it's that's getting pretty 
-close um let's see if we can if if our uh prompt
-
-0:26:03.120,0:26:05.760
-will work so prompt
-
-0:26:15.180,0:26:21.840
-and then we'll do text DaVinci 03 temperature 
-zero and our maximum length is going to be
-
-0:26:21.840,0:26:28.800
-like 600 tokens otherwise it's going to be too 
-long so let's see if let's see if that's enough
-
-0:26:29.820,0:26:31.980
-the output is pretty short so
-
-0:26:34.020,0:26:38.880
-but Json is pretty token intensive so I 
-wouldn't be surprised if it yeah so we
-
-0:26:38.880,0:26:43.080
-ran out of space so it looks like we 
-need to go back and do smaller chunks
-
-0:26:44.340,0:26:49.680
-um but fortunately these earlier scripts 
-are really easy so for instance we just come
-
-0:26:49.680,0:26:56.460
-back here and instead of doing um uh we we just 
-update this so instead of four pages we do three
-
-0:26:57.420,0:27:03.960
-and so then what we'll do is we'll come in here 
-to opinions is fine chunks let's delete these
-
-0:27:05.220,0:27:13.980
-and then we'll rerun um python step 01 and 
-so now what we should have is more chunks
-
-0:27:15.420,0:27:19.140
-so now we have 188 chunks but you see the the um
-
-0:27:21.240,0:27:23.100
-that one that one
-
-0:27:24.720,0:27:30.900
-so this is this is now the largest and it's 
-only 10 kilobytes or nine nine thousand
-
-0:27:31.620,0:27:37.500
-um characters long so this should be small 
-enough to run let's see how many tokens it is
-
-0:27:43.380,0:27:47.400
-um okay so that's now we're down to 
-2800 tokens let me remove the Json part
-
-0:27:48.420,0:27:53.820
-so now we're at 2500 tokens 
-tops so we can do we can do
-
-0:27:54.420,0:28:00.960
-um we can do like 1450 so that's more than 
-twice as many tokens so let's see it's it's
-
-0:28:00.960,0:28:08.040
-more than twice as many tokens with uh 25 less 
-input so theoretically this should be the limit
-
-0:28:10.860,0:28:16.020
-um cool all right excellent I think this is good
-
-0:28:18.360,0:28:24.480
-all right so we're almost done for the 
-day um let's see what chat GPT said
-
-0:28:25.200,0:28:30.780
-do you duplicate characters yeah there we 
-go okay so let's do this for the D dupe
-
-0:28:33.180,0:28:41.580
-um so let's come back here save it and 
-then we'll do python step O2 dedupe
-
-0:28:42.600,0:28:44.640
-all right we needed to add the um
-
-0:28:45.960,0:28:57.720
-Whatchamacallit encoding encoding equals UTF eight 
-and then for the right and coding equals UTF eight
-
-0:29:00.120,0:29:05.700
-okay so now if we go to the dedupt oh 
-actually here we need to delete this
-
-0:29:09.300,0:29:12.420
-it did all of them interesting um
-
-0:29:18.900,0:29:22.080
-oh it that's no if if not in file
-
-0:29:25.260,0:29:27.180
-it got the logic wrong I'm like no it was
-
-0:29:27.180,0:29:29.820
-only supposed to do like five 
-of these let's try that again
-
-0:29:32.760,0:29:36.780
-there we go okay so now the largest 
-of these is eight kilobytes which is
-
-0:29:36.780,0:29:43.500
-plenty small so we come back to chunks and 
-we'll replace those replace yes so now our
-
-0:29:43.500,0:29:50.220
-absolute largest file is 10 kilobytes 9 300 
-characters so this should all easily fit within
-
-0:29:51.360,0:30:00.840
-um no this should all easily fit within our prompt 
-window here so now we need to just go ahead and um
-
-0:30:03.060,0:30:06.540
-run the thing so all right so let's say
-
-0:30:09.540,0:30:22.080
-excellent we are now ready to run our uh prompts 
-are you familiar with open AI python module
-
-0:30:29.280,0:30:34.380
-open AI is dot dot dot I'm wondering 
-if it's slowing down because
-
-0:30:34.920,0:30:40.800
-um uh people are waking up this is one advantage 
-of being a super early bird is I get up earlier
-
-0:30:40.800,0:30:44.940
-than like everyone else granted you know it's 
-always middle of the day somewhere in the world
-
-0:30:46.500,0:30:57.540
-um anyways uh so this may or may not help us with 
-um with this part so now let's see open file save
-
-0:30:57.540,0:31:09.240
-file open AI key text DaVinci 03 tempt that that 
-we can do this up to 1450 that's fine in code
-
-0:31:11.340,0:31:19.680
-all right so this I just cannibalized another um 
-thing um we do not want to clean that up because
-
-0:31:19.680,0:31:26.700
-this is going to be there that's fine all right 
-network error yeah I figured that would happen
-
-0:31:27.600,0:31:36.180
-um okay so let's do a refresh um I have 
-a folder called what is the name of my
-
-0:31:36.180,0:31:44.700
-folder God I have like chipmunk chip monk memory 
-it's hard chipmunk memory um called chunks.text
-
-0:31:47.640,0:31:53.880
-called chunks underscore text um 
-that is full of dot text files
-
-0:31:54.840,0:32:04.620
-um each file um please write a python 
-script that uses open AI module and
-
-0:32:05.520,0:32:19.020
-new module and calls um and uses text DaVinci 
-O3 as the engine we'll say as the model um
-
-0:32:21.420,0:32:33.660
-and uses the contents of the file 
-in the chunks folder to populate
-
-0:32:34.920,0:32:47.820
-a prompt The Prompt is stored as um let's 
-see prompt underscore Json LD uh citation
-
-0:32:47.820,0:32:56.760
-nodes dot text and has a placeholder called 
-um what did I call the placeholder chunk
-
-0:32:59.580,0:33:03.120
-called chunk um in other words
-
-0:33:05.940,0:33:14.520
-open the text file or no um let's 
-see open the prompt file then replace
-
-0:33:17.880,0:33:27.840
-chunk with the contents of the file from 
-chunks.text and use this as the prompt for
-
-0:33:28.920,0:33:39.900
-um openai set the temperature to zero and the 
-token count to 1450. let's see if that works
-
-0:33:42.300,0:33:44.760
-certainly here's a script that 
-should do what you have described
-
-0:33:48.240,0:33:52.680
-I do it differently because I use 
-Windows I know I'm a charlatan um
-
-0:34:13.500,0:34:17.040
-I think it's going to work because
-
-0:34:23.760,0:34:33.120
-so this is the the implications of this if 
-chat GPT knows how to call GPT in theory you
-
-0:34:33.120,0:34:36.960
-can create a machine that can do its 
-own experiments with language models
-
-0:34:38.940,0:34:45.660
-I want to say that again the implication here is 
-now we have a system of a machine that understands
-
-0:34:45.660,0:34:51.600
-the code to call itself well enough and then 
-obviously this thing is intelligent enough to
-
-0:34:51.600,0:34:57.960
-understand results you could in theory have 
-something that trains itself or makes its
-
-0:34:57.960,0:35:09.180
-own data sets or whatever um okay so I like this 
-whoops copy code let's come over here and do this
-
-0:35:10.440,0:35:15.300
-um I guess I didn't say what 
-to do with the response um
-
-0:35:17.460,0:35:20.100
-so we'll do let's see
-
-0:35:24.720,0:35:30.660
-um [Music] and then yeah we 
-don't need any of this stuff
-
-0:35:35.700,0:35:44.880
-so that's fine um and then we need to 
-rather than print um we'll need to save
-
-0:35:47.820,0:35:58.860
-great um the output from the the uh 
-let's see great now response dot text
-
-0:35:59.580,0:36:05.880
-should be in Json format can you 
-please save the output to a new folder
-
-0:36:06.480,0:36:14.520
-called um uh let's see we'll 
-say called AG underscore Json um
-
-0:36:17.880,0:36:22.440
-instead of just printing um we should
-
-0:36:24.180,0:36:36.360
-uh let's see otherwise uh say use the same file 
-name as the dot text file but just replace the dot
-
-0:36:36.360,0:36:49.800
-text with DOT Json um let's see before you write 
-this script can you uh tell me if you understand
-
-0:36:51.840,0:37:05.700
-um give me some pseudocode so I can check to make 
-sure we understand each other if this works yeah
-
-0:37:15.420,0:37:17.460
-well it understands the concept of pseudocode
-
-0:37:19.560,0:37:23.280
-and then it's going to go ahead and write the 
-script Okay cool so let's see if it fixes it
-
-0:37:24.420,0:37:30.000
-um asking for the pseudocode may or may not 
-be viable especially because this code is
-
-0:37:30.000,0:37:36.000
-so simple it might have been easier just to 
-ask for it to um to just go ahead and do it
-
-0:37:37.080,0:37:49.680
-um but yeah so we're also going to need to do 
-um in coding equals utf-8 always need to do that
-
-0:37:55.260,0:37:56.580
-here I'll just copy this
-
-0:38:01.320,0:38:02.700
-and then we'll need the same
-
-0:38:08.460,0:38:10.320
-yep okay
-
-0:38:14.520,0:38:15.020
-cool
-
-0:38:22.020,0:38:25.080
-so instead of printing it we save it
-
-0:38:26.580,0:38:33.360
-so with open as blah blah right so 
-let's go ahead and add grab this comma
-
-0:38:37.200,0:38:44.820
-um I think we're ready so then one last 
-thing though is um what I like to do is
-
-0:38:44.820,0:38:51.000
-we'll keep we'll keep the print um just that 
-way we know what's going on and uh we'll add
-
-0:38:51.000,0:38:58.020
-new line new line new line and then respond to 
-that text um here actually We'll add a little
-
-0:39:02.520,0:39:11.040
-little dmarc okay let's see if 
-this works CLS uh python step O3
-
-0:39:12.960,0:39:26.940
-open file is not defined ah right because I 
-used um my own function for that um so let me um
-
-0:39:30.180,0:39:33.300
-darn it here let me pause this for a 
-second I'll just copy this function
-
-0:39:33.300,0:39:34.620
-from somewhere else you don't need to see that
-
-0:39:35.280,0:39:40.620
-okay so what I had to do is I had to add this 
-function so what I usually do is because I have
-
-0:39:40.620,0:39:45.960
-a very particular way of doing things and I do it 
-every time I usually write my own open file and
-
-0:39:45.960,0:39:51.180
-um and write and save file function which always 
-does it in utf-8 which is why I have to keep
-
-0:39:51.180,0:39:56.400
-manually adding this stuff because you you pick a 
-default and you stick with it so rather than ASCII
-
-0:39:56.400,0:40:01.680
-or ANSI or whatever I just say everything 
-is utf-8 anyways this should work um CLS
-
-0:40:04.800,0:40:09.960
-and if this works I'll pause it we'll take a look 
-at the results and call it a day because then the
-
-0:40:09.960,0:40:13.680
-last step is going to be getting it all together 
-and visualizing it that is going to be fun
-
-0:40:15.180,0:40:17.100
-come on you can do it
-
-0:40:19.260,0:40:21.900
-um key error text
-
-0:40:25.800,0:40:31.680
-response dot text okay so it didn't like that
-
-0:40:35.520,0:40:38.880
-um all right well let me look 
-at one of my other functions
-
-0:40:41.340,0:40:49.560
-um let's see let's do YouTube generate 
-chapters so I do response choices text ah
-
-0:40:50.640,0:40:58.020
-response so it didn't understand that part 
-but that's fine um okay so instead we'll do
-
-0:41:00.960,0:41:06.600
-text equals and we'll do that 
-strip so then we'll just do text
-
-0:41:07.560,0:41:11.580
-and then right text so that should work
-
-0:41:15.360,0:41:22.920
-and away we go so 95 of this was done 
-with chat GPT if it works there was a
-
-0:41:22.920,0:41:29.580
-couple things that I had to fix manually um 
-but you know it did its best um and what I
-
-0:41:29.580,0:41:32.520
-was really impressed by one of the things 
-I was really impressed by oh there we go
-
-0:41:34.020,0:41:40.800
-um no such file it didn't like the backslash 
-backslash but we got we got some good Json here
-
-0:41:42.180,0:41:47.940
-um okay so then we got to open kg 
-Json replace dot text with blah okay
-
-0:41:50.340,0:41:57.180
-so let me tell it this say okay okay 
-that mostly worked uh but I got an error
-
-0:41:57.900,0:42:06.960
-um it may be important to note um 
-running on Windows here's the error
-
-0:42:11.280,0:42:15.780
-okay so it's going to be fixing this 
-so anyways there's just a couple things
-
-0:42:18.060,0:42:20.460
-um that it didn't like okay it didn't
-
-0:42:23.580,0:42:28.080
-wait is it that simple that it just it what 
-didn't exist oh it didn't create it okay
-
-0:42:29.040,0:42:32.760
-because the previous script it it 
-checked and then made sure it existed
-
-0:42:33.420,0:42:38.520
-um okay so anyways um yeah so there's only a 
-couple things that I had to go outside of this
-
-0:42:38.520,0:42:44.040
-or or background knowledge that I had but for 
-instance when I asked it to use Spacey or nltk
-
-0:42:45.960,0:42:52.440
-um it tried it didn't work but then it suggested 
-use regex instead which is you know I would have
-
-0:42:52.440,0:42:59.220
-done that as someone who's been cleaning up 
-uh bulk data for a long time um okay so then
-
-0:43:02.760,0:43:07.140
-it should add the little thing you 
-know it check if the yep there we
-
-0:43:07.140,0:43:11.040
-go this function this bit right here I'm 
-pointing at the screen you can't see it
-
-0:43:12.180,0:43:14.160
-um if it doesn't exist then make it okay cool
-
-0:43:17.100,0:43:23.040
-so basically all we need is this really you only 
-need to check once you don't need to check every
-
-0:43:23.040,0:43:33.540
-single time but whatever that's fine so then we'll 
-come down here check if it exists all right CLS
-
-0:43:33.540,0:43:40.260
-clear screen with any luck this worked but yeah 
-so most I mean the vast majority of the code it
-
-0:43:40.260,0:43:46.140
-did I just told it what to do now imagine you slap 
-a voice interface so then you don't even have to
-
-0:43:46.860,0:43:53.400
-um type it out right uh use whisper use open ai's 
-whisper hey are you listening open AI I want this
-
-0:43:53.400,0:43:58.380
-I want to be able to talk through the code um 
-okay so now we're saving this stuff it should
-
-0:43:58.380,0:44:04.680
-be here hey look at that okay so this will take 
-a little while to run but we've got good Json
-
-0:44:04.680,0:44:09.300
-it worked so I'm going to go ahead and stop the 
-video for today I'm gonna let this finish running
-
-0:44:10.200,0:44:14.760
-um and then tomorrow we will merge all this 
-together and visualize it thanks for watching
+0:02:55.000,0:03:00.034
+ [Música de encerramento]
